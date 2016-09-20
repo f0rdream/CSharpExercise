@@ -4,15 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharpExersise
+namespace TypeConversionApplication
 {
-    class Program
+    class StringConversion
     {
         static void Main(string[] args)
         {
-            const string CITY = "布宜诺斯艾利斯";//常量，城市
-            const string NAME = "列奥波尔多·福图纳托·加尔铁里·卡斯特利";//常量，姓名
-            Console.WriteLine(CITY+"出生在"+NAME+"的一个工人家庭");//使用常量
+            int i = 75;
+            float f = 53.005f;
+            double d = 2345.7652;
+            bool b = true;
+
+            Console.WriteLine(i.ToString());
+            Console.WriteLine(f.ToString());
+            Console.WriteLine(d.ToString());
+            Console.WriteLine(b.ToString());
+            Console.ReadKey();
+
         }
     }
 }
